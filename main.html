@@ -25,10 +25,26 @@
                          '<td>' + koleksiBuku[i]['Harga'] + '</td>' +
                          '</tr>';
           }
+
+          $('#isi-tabel').html(tabelHtml);
+        }
+      });
+    });
   </script>
 </head>
 <body>
 
+  <div id="info-toko"></div>
+  <table id="tabel-buku">
+    <thead>
+      <tr>
+        <th>Judul</th>
+        <th>Kategori</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody id="isi-tabel"></tbody>
+  </table>
 
 </body>
 </html>
