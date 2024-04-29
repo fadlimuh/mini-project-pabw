@@ -1,0 +1,24 @@
+{
+  "Toko Buku": {
+    "Nama": "Toko Buku Al-Berkah",
+    "Alamat": "Jl. Chairul Anwar 98",
+    "Pengarang": "Boy Kautshar",
+    "Koleksi_Buku": [
+      {
+        "Judul": "Kisah Anak Rantau yang Rebel",
+        "Kategori": "Non-Fiksi",
+        "Harga": 58000
+      },
+      {
+        "Judul": "Filsafat Eropa",
+        "Kategori": "Non-Fiksi",
+        "Harga": 70000
+      },
+      {
+        "Judul": "Runtuhnya Kerajaan Yunani",
+        "Kategori": "Non-Fiksi",
+        "Harga": 65000
+      }
+    ]
+  }
+}
