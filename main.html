@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Project Toko BUku</title>
+  <title>Mini Project Toko Buku</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $.ajax({
+        url: 'data.json',
+        dataType: 'json',
+        success: function(data) {
+          $('#info-toko').html('<div>Nama Toko : ' + data['Toko Buku']['Nama'] + '</div>' +
+                              '<div>Alamat : ' + data['Toko Buku']['Alamat'] + '</div>' +
+                              '<div>Pengarang : ' + data['Toko Buku']['Pengarang'] + '</div>');
+  </script>
 </head>
 <body>
-  
+
+
 </body>
 </html>
