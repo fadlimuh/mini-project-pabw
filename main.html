@@ -14,6 +14,17 @@
           $('#info-toko').html('<div>Nama Toko : ' + data['Toko Buku']['Nama'] + '</div>' +
                               '<div>Alamat : ' + data['Toko Buku']['Alamat'] + '</div>' +
                               '<div>Pengarang : ' + data['Toko Buku']['Pengarang'] + '</div>');
+
+          var koleksiBuku = data['Toko Buku']['Koleksi_Buku'];
+          var tabelHtml = '';
+          // Loop melalui setiap buku dan tambahkan ke dalam tabel
+          for(var i = 0; i < koleksiBuku.length; i++) {
+            tabelHtml += '<tr>' +
+                         '<td>' + koleksiBuku[i]['Judul'] + '</td>' +
+                         '<td>' + koleksiBuku[i]['Kategori'] + '</td>' +
+                         '<td>' + koleksiBuku[i]['Harga'] + '</td>' +
+                         '</tr>';
+          }
   </script>
 </head>
 <body>
